@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_space">
+
+        <TextView
+            android:id="@+id/filter_eventtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Types"
+            android:textColor="@color/black"
+            android:padding="@dimen/default_space"
+            android:layout_marginLeft="@dimen/byte_space"
+            android:layout_marginRight="@dimen/byte_space"
+            android:drawableRight="@drawable/ic_item_add" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:id="@+id/filter_states"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="States"
+            android:textColor="@color/black"
+            android:padding="@dimen/default_space"
+            android:layout_marginLeft="@dimen/byte_space"
+            android:layout_marginRight="@dimen/byte_space"
+            android:drawableRight="@drawable/ic_item_add" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:id="@+id/filter_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Tags / Keywords"
+            android:textColor="@color/black"
+            android:padding="@dimen/default_space"
+            android:layout_marginLeft="@dimen/byte_space"
+            android:layout_marginRight="@dimen/byte_space"
+            android:drawableRight="@drawable/ic_item_add" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_space" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Keywords"
+        android:textStyle="bold"
+        android:gravity="center" />
+    <View
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/big_space"
+        android:layout_weight="0.9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexboxlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap"
+                app:alignItems="stretch"
+                app:alignContent="stretch" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on Keyword to remove it."
+                android:textStyle="italic"
+                android:padding="@dimen/nibble_space"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/blue" />
+
+</LinearLayout>

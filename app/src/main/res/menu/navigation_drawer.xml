@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_menu_bookmark"
+            android:title="Bookmarks" />
+        <item
+            android:id="@+id/nav_personalise"
+            android:icon="@drawable/ic_menu_personalise"
+            android:title="Filters" />
+        <!--<item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="Settings" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Share This App"
+                android:actionProviderClass="android.widget.ShareActionProvider"/>
+            <item
+                android:id="@+id/nav_rateus"
+                android:icon="@drawable/ic_menu_rateus"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_feedback"
+                android:title="Feedback" />
+            <!--<item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_future_aboutus"
+                android:title="About Us" />-->
+        </menu>
+    </item>
+
+</menu>

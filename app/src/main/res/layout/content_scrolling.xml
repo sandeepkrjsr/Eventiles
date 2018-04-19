@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kodexlabs.eventiles.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/nibble_space">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/byte_space"
+            android:padding="@dimen/byte_space"
+            android:elevation="@dimen/bit_space"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cultural Fest"
+                android:textSize="@dimen/default_space"
+                android:textColor="@color/black"
+                android:padding="@dimen/nibble_space"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/institute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KIIT University"
+                android:textSize="@dimen/small_space"
+                android:textColor="@color/black"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_institute"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical" />
+            <TextView
+                android:id="@+id/venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bhubaneswar, Orissa"
+                android:textSize="@dimen/small_space"
+                android:textColor="@color/black"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_location"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/byte_space"
+            android:padding="@dimen/byte_space"
+            android:elevation="@dimen/bit_space"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starts at  02 March 2017, 09:00 AM | Sunday\n\nEnds at  05 March 2017, 05:00 PM | Wednesday"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_space"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_calendar"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/byte_space"
+            android:padding="@dimen/byte_space"
+            android:elevation="@dimen/bit_space"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KIIT Student : Rs. 200 per person\nnon-KIIT Student : Rs. 500 per person"
+                android:textSize="@dimen/small_space"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_description"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical" />
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider"
+                android:layout_margin="@dimen/byte_space"/>
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7064009031 (Sandeep)\n8235365517 (Pankaj)"
+                android:textSize="@dimen/small_space"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_contact"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical" />
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/byte_space"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sandeepkrjsr@gmail.com\npankajkumarsingh@gmail.com"
+                android:textSize="@dimen/small_space"
+                android:padding="@dimen/nibble_space"
+                android:drawableLeft="@drawable/ic_detail_mail"
+                android:drawablePadding="@dimen/byte_space"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/byte_space"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@color/white"
+            android:elevation="1dp">
+            <Button
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Website"
+                android:textColor="@color/blue_dark"
+                android:background="@color/white" />
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:background="@color/blue_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/byte_space"
+            android:padding="@dimen/byte_space">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/editor_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_dummy"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/blue"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/medium_space"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:id="@+id/editor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sandeep Kumar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_space"
+                    android:padding="@dimen/nibble_space"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"/>
+                <!--<TextView
+                    android:id="@+id/editor_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOLLOW"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="@dimen/small_space"
+                    android:padding="@dimen/nibble_space"
+                    android:layout_marginLeft="@dimen/nibble_space"
+                    android:background="@drawable/box_blue_outline"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"/>-->
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="posted on 02 Mar 2017"
+                    android:textSize="@dimen/small_space"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/nibble_space"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/user_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"/>
+
+    <ImageButton
+        android:visibility="invisible"
+        android:id="@+id/user_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_set_logout"
+        android:layout_above="@+id/internet_status"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/user_dummy"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/circleImageView" />
+
+    <!--<ImageView
+        android:id="@+id/user_picture"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:background="@drawable/niklaus" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_picture"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:src="@drawable/user_dummy"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_space"
+        android:text="Android Studio"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/internet_status"
+        android:layout_width="@dimen/default_space"
+        android:layout_height="@dimen/default_space"
+        android:layout_marginRight="115dp"
+        android:layout_alignBottom="@+id/circleImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- <TextView
+         android:id="@+id/textView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="android.studio@android.com" />-->
+
+</RelativeLayout>

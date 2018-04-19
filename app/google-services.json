@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "321576083376",
+    "firebase_url": "https://eventiles-19039.firebaseio.com",
+    "project_id": "eventiles-19039",
+    "storage_bucket": "eventiles-19039.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321576083376:android:a46e88e6de2e73b8",
+        "android_client_info": {
+          "package_name": "com.kodexlabs.eventiles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321576083376-e3d9rmu6vjfctt7plpdkm170hgfmrukp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVsjLbNGvAKP6bLxhZSgunJkt8MFmfiM0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardview">
+
+    <!--LAYOUT-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/byte_space"
+        android:background="@color/white"
+        android:elevation="@dimen/bit_space">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/loading_1" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/glass_black"
+            android:textSize="@dimen/big_space"
+            android:padding="@dimen/small_space"
+            android:layout_alignBottom="@+id/poster"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/date"
+            android:layout_toStartOf="@+id/date" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@color/glass_white"
+            android:gravity="center"
+            android:text="02 Mar\nSun"
+            android:textSize="@dimen/small_space"
+            android:textColor="@color/white"
+            android:padding="@dimen/byte_space"
+            android:layout_margin="@dimen/byte_space"
+            android:layout_alignBottom="@+id/poster"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!--LAYOUT_2-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/byte_space"
+        android:background="@color/white"
+        android:elevation="@dimen/bit_space">
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/poster2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/loading_1" />
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/big_space"
+            android:padding="@dimen/small_space"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/poster2"
+            android:layout_toEndOf="@+id/poster2" />
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@color/glass_white"
+            android:gravity="center"
+            android:text="02 Mar\nSun"
+            android:textSize="@dimen/small_space"
+            android:textColor="@color/glass_black"
+            android:padding="@dimen/byte_space"
+            android:layout_margin="@dimen/byte_space"
+            android:layout_alignBottom="@+id/poster2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!--LAYOUT_3-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/byte_space"
+        android:background="@color/white"
+        android:elevation="@dimen/bit_space">
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/big_space"
+            android:gravity="center_vertical"
+            android:padding="@dimen/small_space"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/date3"
+            android:layout_toStartOf="@+id/date3" />
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@color/glass_white"
+            android:gravity="center"
+            android:text="02 Mar\nSun"
+            android:textSize="@dimen/small_space"
+            android:textColor="@color/glass_black"
+            android:padding="@dimen/byte_space"
+            android:layout_margin="@dimen/byte_space"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
